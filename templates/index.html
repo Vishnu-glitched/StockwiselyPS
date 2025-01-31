@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://www.shutterstock.com/image-photo/chatbot-conversation-ai-artificial-intelligence-600nw-2313578731.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-yellow-400">StockWisely</h1>
+        <p class="mb-8 leading-relaxed text-neutral-50">StockWisely is a predictive platform that uses Artificial Neural Networks (ANN) to forecast future stock prices. It analyzes historical stock data, including open, close, high, low prices, and trading volume, along with technical indicators like RSI and EMA. By training a neural network on this data, StockWisely generates accurate predictions for future stock price movements. Users input historical data, and the platform provides predictions for a selected time period. Whether you're a beginner or experienced investor, StockWisely empowers you to make data-driven, informed decisions, helping you navigate the stock market with confidence.</p>
+        <div class="flex justify-center">
+          <a href="/Prediction" class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Predict</a>
+          <a href="/About" class="ml-4 inline-flex text-yellow-500 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock body %}
